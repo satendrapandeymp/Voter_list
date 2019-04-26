@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voting List</title>
+	    <script hrerf="/static/jquery.min.js"></script>
+        <link href="/static/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/font-awesome.min.css" rel="stylesheet">
+        <style type="text/css">
+
+    			body {
+    			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#608f95+0,008588+9,0c2449+52,1a1e3b+100 */
+    			background: rgb(96,143,149); /* Old browsers */
+    			background: -moz-linear-gradient(-45deg, rgba(96,143,149,1) 0%, rgba(0,133,136,1) 9%, rgba(12,36,73,1) 52%, rgba(26,30,59,1) 100%); /* FF3.6-15 */
+    			background: -webkit-linear-gradient(-45deg, rgba(96,143,149,1) 0%,rgba(0,133,136,1) 9%,rgba(12,36,73,1) 52%,rgba(26,30,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    			background: linear-gradient(135deg, rgba(96,143,149,1) 0%,rgba(0,133,136,1) 9%,rgba(12,36,73,1) 52%,rgba(26,30,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#608f95', endColorstr='#1a1e3b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    			}
+
+                .container {
+                                height: 100%;
+                                margin-top: 2%;
+                                margin-left: 10%;
+                            }
+                
+
+        </style>
+    </head>
+    <body>
+                  <div class="container background-color: rgb(255,0,255);">
+                      
+                      <div class="container">
+                            <input type="text" name="leaf" value="{{center}}" disabled="" id="leaf" size="30">
+                            </div>
+                      
+                        <div class="container">
+                          <img src="{{name}}" alt="No Image" height="200" width="500" id="img1">
+                        </div>
+                        
+                        <div class="container">
+                        <form action="/" method="get">
+                            <input type="text" name="id", value="{{temp_id}}"><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                        </div>
+
+
+                        <div class="container">
+                        
+                            <input type="text" name="leaf" value="you can download the PDFs from here." disabled="" id="leaf" size="30">
+                            
+                            <br>
+                        
+                        <a href="static/PDFs/Campus_1_decrypted.pdf"> Campus_1  </a> <br>
+                        <a href="static/PDFs/Campus_2_decrypted.pdf"> Campus_2  </a> <br>
+                        <a href="static/PDFs/Campus_3_decrypted.pdf"> Campus_3  </a> <br>
+                        <a href="static/PDFs/Community_1_decrypted.pdf"> Community_1  </a> <br>
+                        <a href="static/PDFs/Community_1_decrypted.pdf"> Community_2  </a> <br>
+                        <a href="static/PDFs/Community_1_decrypted.pdf"> Community_3  </a> <br>
+                        <a href="static/PDFs/NanKari_1_decrypted.pdf"> Nankari_1  </a> <br>
+                        <a href="static/PDFs/NanKari_2_decrypted.pdf"> Nankari_2  </a> <br>
+                        <a href="static/PDFs/NanKari_3_decrypted.pdf"> Nankari_3  </a> <br>
+
+                        </div>
+                    
+                  </div>
+                  <script src="/static/jquery-1.12.4.min.js"></script>
+                  <script src="/static/bootstrap.min.js"></script>
+                  <script src="static/mqttws31.js" ></script>
+    </body>
+</html>
