@@ -33,11 +33,14 @@ def index():
     center = "Pooling Booth: Campus_3_decrypted"
     temp_id = "UP/64/292/0120094"
     id = request.args.get('id')
-    if database.has_key(id):
+    try:
         p = database[id]
         name = p.detail
         center = "Polling booth: " + p.booth
         temp_id = id
+    except:
+        pass
+    
     return render_template('index.html', name = name, center = center, temp_id= temp_id)
 
 
